@@ -16,7 +16,6 @@ public class toInteger {
 		answer = Integer.parseInt(s);
 		
 		
-		
 		return answer;
 	}
 	

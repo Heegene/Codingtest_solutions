@@ -4,11 +4,9 @@ public class HarshadNumber {
 	
 	public static void main(String[] args) throws Exception {
 		
-		System.out.println(solution(10));
-		
+		System.out.println(solution(200));
 		
 	}
-	
 	
 	public static boolean solution(int x) throws Exception {
 		int sum = 0;
