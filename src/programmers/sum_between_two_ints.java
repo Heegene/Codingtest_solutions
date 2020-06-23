@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.programmers;
+package programmers;
 
 public class sum_between_two_ints {
 

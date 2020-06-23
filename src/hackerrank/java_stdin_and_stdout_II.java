@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.hackerrank;
+package hackerrank;
 
 import java.util.Scanner;
 

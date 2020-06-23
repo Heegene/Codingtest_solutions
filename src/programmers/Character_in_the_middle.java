@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.programmers;
+package programmers;
 
 public class Character_in_the_middle {
 

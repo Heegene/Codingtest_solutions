@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.programmers;
+package programmers;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

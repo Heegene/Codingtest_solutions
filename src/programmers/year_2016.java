@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.programmers;
+package programmers;
 import java.util.Calendar;
 
 public class year_2016 {
@@ -6,7 +6,7 @@ public class year_2016 {
 		public static void main(String[] args) {
 
 		
-				System.out.println(getDateDay(6,19));
+				System.out.println(getDateDay(6,23));
 		}
 		
 //		static String getDateDay(String date, String dateType) throws Exception {
@@ -15,7 +15,7 @@ public class year_2016 {
 
 			Calendar cal = Calendar.getInstance();
 			cal.set(Calendar.YEAR, 2016);
-			cal.set(Calendar.MONTH, a-1);
+			cal.set(Calendar.MONTH, a+1);
  			cal.set(Calendar.DAY_OF_MONTH, b);
 			
 			

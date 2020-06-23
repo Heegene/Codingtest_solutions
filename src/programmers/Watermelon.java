@@ -1,4 +1,4 @@
-package Codingtest_Solution.src.programmers;
+package programmers;
 
 public class Watermelon {
 	public static void main(String[] args) {
