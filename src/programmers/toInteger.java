@@ -6,6 +6,9 @@ public class toInteger {
 		
 		System.out.println(solution("-6"));
 		
+		String s = "hello";
+		test(s);
+		System.out.println(s);
 		
 	}
 	
@@ -19,4 +22,7 @@ public class toInteger {
 		return answer;
 	}
 	
+	public static void test (String s) {
+		s += "Java!";
+	}
 }
