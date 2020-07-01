@@ -4,15 +4,14 @@ import java.util.Arrays;
 
 public class P1470_Shuffle_The_Array {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
 		int[] nums = {1,2,3,4,4,3,2,1};
 		int n = 4;
-		System.out.println(Arrays.toString(sol.shuffle(nums,n)));
+		System.out.println(Arrays.toString(Solution.shuffle(nums,n)));
 		
 	}
 	
 	static class Solution {
-		public int[] shuffle(int[] nums, int n) {
+		public static int[] shuffle(int[] nums, int n) {
 //			Input: nums = [2,5,1,3,4,7], n = 3
 //					Output: [2,3,5,4,1,7] 
 //					Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7]. 
