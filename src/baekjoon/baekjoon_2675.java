@@ -1,63 +1,44 @@
 package baekjoon;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Scanner;
 
 public class baekjoon_2675 {
 	static String S = "";
-	public static void main(String[] args)  {
+	static int R = 0;
+	static int T = 0;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] str = br.readLine().split(" ");
 		
-	Scanner sc = new Scanner(System.in);	
-	
-	while (sc.nextLine() != null) {
-		S = sc.nextLine();
 		
+		for (int i = 0; i < T; i++) {
+			
+			int R = Integer.parseInt(str[0]);
+			// 배열의 첫번째에 해당하는 걸 숫자로 변환
+			
+			S = str[1];
+			
+		}
+		
+		solution(S);
 	}
-	System.out.println(solution(S));
-	
-	}
-	
-//	
-//	public static void main(String[] args) throws IOException {
-//
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-//		String input = "";
-//
-//		while ((input = br.readLine()) != null && input.length() != 0) { // 입력값 없이 엔터쳤을때 종료
-//			String[] cutoff = input.split(" ");
-//			
-//			int A = Integer.parseInt(cutoff[0]);
-//			int B = Integer.parseInt(cutoff[1]);
-//			
-//			String r = A + B + "\n";
-//			
-//			bw.write(r, 0, r.length());
-//		}
-//	
-//
-//		bw.flush();
-//		bw.close();
-	
-	
-	public static String solution(String S) {
-		// 배열에 한글자씩 저장
+
+	public static void solution(String S) {
 		String res = "";
-		String[] arr = S.split("");
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				res += arr[i];
+		// 배열에 한글자씩 저장
+		
+		for (int i = 0; i < S.length(); i++) {
+			for (int j = 0; j < R; j++) {
+				res = S.charAt(j) + "";
+				System.out.println(res);
 			}
 		}
 		
-				
-		return res;
-		
-		
+
+
 	}
 
 }
