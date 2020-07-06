@@ -20,6 +20,8 @@ public class Baekjoon_5543 {
 		
 		System.out.println(min2+mindrink-50);
 		
+	
+		
 		
 		
 		
