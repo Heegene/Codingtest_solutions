@@ -18,7 +18,8 @@ public class baekjoon_10809 {
 		
 		// a~z까지의 알파벳은 숫자처럼 사용할 수 있음 
 		for (char c = 'a'; c <= 'z'; c++ ) {
-			System.out.print(input.indexOf(c) + " ");
+			System.out.print(input.indexOf(c) + " "); 
+			///
 		}
 		
 		
