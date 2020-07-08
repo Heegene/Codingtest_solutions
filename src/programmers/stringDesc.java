@@ -35,7 +35,7 @@ public class stringDesc {
 		
 		for (String output : arr) { 
 			sb.append(output); //g,f,e,d,c,b,Z 순차생성하여
-			// Stringbuilder 객체 안에 넣음
+			// Stringbuilder 객체 안에 넣음(끝에다가 넣는거니까 add가 아니라 인덱스 없이 append를 사용) 
 		}
 		// sb를 String으로 변환하여 리턴 
 		return sb.toString();
