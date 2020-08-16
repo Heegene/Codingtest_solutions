@@ -4,24 +4,24 @@ import java.util.*;
 public class Eliminating_duplication {
 	
 	    public static int[] solution(int []arr) {
-	        int[] answer = {};
-	        TreeSet ts = new TreeSet<>();
-	        for (int i = 0; i < arr.length; i++) {
-	            ts.add(arr[i]); 
+	        ArrayList<Integer> temp = new ArrayList<Integer>();
+	        int preNum = 10;
+	        
+	        for (int num: arr) {
+	        	if (preNum != num) {
+	        		temp.add(num); // arr의 원소를 temp에 넣음
+	        	}
+	        	preNum = num;
+	        }
+	        int[] answer = new int[temp.size()];
+	        
+	        for (int i = 0; i < answer.length; i++) {
+	        	answer[i] = temp.get(i).intValue();
 	        }
 	        
-	        Object[] a = ts.toArray();
 	        
-	        for (int i = 0; i < a.length; i ++ ) {
-	        	answer[i] = (int)a[i];
-	        }
 	        
 	        return answer;
 	    }
-	    
-	    public static void main(String[] args) {
-	    	int[] arr = {1,1,2,3,4,4,8};
-			System.out.println(solution(arr));
-		}
-
+	   
 }
