@@ -1,4 +1,4 @@
-package algorithm;
+package programmers;
 
 import java.util.*;
 public class Eliminating_duplication {
@@ -9,7 +9,7 @@ public class Eliminating_duplication {
 	        
 	        for (int num: arr) {
 	        	if (preNum != num) {
-	        		temp.add(num); // arrÀÇ ¿ø¼Ò¸¦ temp¿¡ ³ÖÀ½
+	        		temp.add(num); // arrï¿½ï¿½ ï¿½ï¿½ï¿½Ò¸ï¿½ tempï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	        	}
 	        	preNum = num;
 	        }
